@@ -9,6 +9,6 @@ RUN sudo apt-get install -y tmux
 RUN sudo apt-get install -y python3-pip
 RUN pip install --user entangled-filters
 RUN pip install --user cookiecutter
-RUN npm install -g browser-sync
+
 RUN wget https://github.com/dhall-lang/dhall-haskell/releases/download/1.40.2/dhall-1.40.2-x86_64-linux.tar.bz2 && tar --extract --bzip2 --file dhall-json-*-x86_64-linux.tar.bz2 && sudo cp ./bin/dhall-to-json /usr/local/bin
 RUN wget https://github.com/entangled/entangled/releases/download/v1.2.4/entangled-1.2.4-x86_64-GNU-Linux.tar.xz && tar --extract --file entangled-1.2.4-x86_64-GNU-Linux.tar.xz && sudo cp ./entangled-1.2.4-x86_64-GNU-Linux/* /usr/local/
