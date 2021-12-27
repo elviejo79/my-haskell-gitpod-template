@@ -4,9 +4,9 @@ RUN sudo apt-get update && sudo apt-get install -y haskell-platform
 RUN sudo curl -sSL https://get.haskellstack.org/ | sh
 RUN sudo apt-get install -y nodejs npm
 RUN wget https://github.com/jgm/pandoc/releases/download/2.9.2.1/pandoc-2.9.2.1-1-amd64.deb && sudo dpkg -i pandoc-2.9.2.1-1-amd64.deb
-RUN sudo apt-get install inotify-tools
-RUN sudo apt-intsall tmux
-RUN sudo apt-install python3-pip
+RUN sudo apt-get install -y inotify-tools
+RUN sudo apt-get install -y tmux
+RUN sudo apt-get install -y python3-pip
 RUN pip install --user entangled-filters
 RUN pip install --user cookiecuter
 RUN npm install -g browser-sync
